@@ -3,7 +3,7 @@
 // * Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // * Stampare a schermo la bici con peso minore.
 
-// # Array di oggetti
+// # Array di Oggetti
 
 // array oggetti bici da corsa
 const biciDaCorsa = [
