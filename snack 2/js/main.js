@@ -12,28 +12,45 @@ const squadreDiCalcio = [
   // oggetto con indice 0
   {
     nome: "FIORENTINA",
-    punti: 25,
-    falliSubiti: 11,
+    punti: generateRandomNumbers(50),
+    falliSubiti: generateRandomNumbers(25),
   },
 
   // oggetto con indice 1
   {
     nome: "CAGLIARI",
-    punti: 17,
-    falliSubiti: 7,
+    punti: generateRandomNumbers(50),
+    falliSubiti: generateRandomNumbers(25),
   },
 
   // oggetto con indice 2
   {
     nome: "PARMA",
-    punti: 21,
-    falliSubiti: 19,
+    punti: generateRandomNumbers(50),
+    falliSubiti: generateRandomNumbers(25),
   },
 
   // oggetto con indice 3
   {
     nome: "UDINESE",
-    punti: 14,
-    falliSubiti: 14,
+    punti: generateRandomNumbers(50),
+    falliSubiti: generateRandomNumbers(25),
   },
 ];
+
+// # Svolgimento
+
+// funzione che genera un numero casuale
+function generateRandomNumbers(max) {
+  return Math.ceil(Math.random() * max);
+}
+
+// PER OGNI oggetto nella lista di oggetti
+for (let i = 0; i < squadreDiCalcio.length; i++) {
+  const squadra = squadreDiCalcio[i];
+
+  const nome = squadra.nome;
+  const falliSubiti = squadra.falliSubiti;
+
+  console.log({ nome, falliSubiti });
+}
