@@ -39,10 +39,11 @@ let pesoMin;
 // creo variabile messaggio di output
 let outputMessage;
 
+// PER OGNI oggetto all'interno dell'array di oggetti
 for (let i = 0; i < biciDaCorsa.length; i++) {
   const bici = biciDaCorsa[i];
 
-  // prendo la proprieta peso delle bici e la inserisco in un array
+  // prendo la proprietà nome delle bici e la inserisco in un array
   nomeBici.push(bici.nome);
 }
 
@@ -50,7 +51,7 @@ for (let i = 0; i < biciDaCorsa.length; i++) {
 for (let i = 0; i < biciDaCorsa.length; i++) {
   const bici = biciDaCorsa[i];
 
-  // prendo la proprieta peso delle bici e la inserisco in un array
+  // prendo la proprietà peso delle bici e la inserisco in un array
   pesoBici.push(bici.peso);
 }
 
